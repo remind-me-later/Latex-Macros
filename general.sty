@@ -1,0 +1,14 @@
+\ProvidesPackage{general}
+
+\let\oldepsilon\epsilon
+\renewcommand{\epsilon}{\ensuremath{\varepsilon}}
+
+\let\originalleft\left
+\let\originalright\right
+\renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
+\renewcommand{\right}{\aftergroup\egroup\originalright}
+\newcommand{\parens}[1]{\left({#1}\right)}
+\newcommand{\brackets}[1]{\left[{#1}\right]}
+\newcommand{\braces}[1]{\left\{{#1}\right\}}
+
+\newcommand{\R}{\mathbb{R}}

@@ -1,0 +1,39 @@
+\ProvidesPackage{teoremas}
+
+% Requirements
+\RequirePackage{amssymb}
+\RequirePackage{etoolbox}
+\RequirePackage[shortlabels]{enumitem}
+\usepackage{multicol}
+\RequirePackage{amsmath}
+\RequirePackage[thmmarks, amsmath, thref]{ntheorem}
+
+% General
+%\renewcommand{\thesection}{\Roman{section}} 
+
+% Theorems
+\theoremstyle{plain}
+\newtheorem{definition}{Definición}[section]
+\newtheorem{example}{Ejemplo}[section]
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{corollary}{Corolario}[theorem]
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{remark}[theorem]{Nota}
+
+% Problems
+\theorembodyfont{\normalfont}
+\newtheorem{problem}{Número}[section]
+
+\AtBeginEnvironment{problem}{\setcounter{equation}{0}}
+
+% Solutions
+\theoremheaderfont{\itshape}
+\theoremseparator{. ---}
+\theorembodyfont{\upshape}
+\theoremsymbol{\ensuremath{\square}}
+\newtheorem{proof}{Demostración}[theorem]
+\newtheorem{solution}{Solución}[problem]
+
+\AtBeginEnvironment{solution}{\setcounter{equation}{0}}
+
+\endinput
