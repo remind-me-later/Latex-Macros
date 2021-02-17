@@ -24,7 +24,7 @@
 
 % Problems
 \theorembodyfont{\normalfont}
-\newtheorem{problem}{Número}[section]
+\newtheorem{problem}[example]{Número}
 
 \AtBeginEnvironment{problem}{\setcounter{equation}{0}}
 
@@ -34,7 +34,7 @@
 \theorembodyfont{\upshape}
 \theoremsymbol{\ensuremath{\square}}
 \newtheorem{proof}{Demostración}[theorem]
-\newtheorem{solution}{Solución}[problem]
+\newtheorem{solution}{Solución}[example]
 
 \AtBeginEnvironment{solution}{\setcounter{equation}{0}}
 
