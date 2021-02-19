@@ -19,13 +19,6 @@
 \newcommand{\pd}{\partial}
 
 % Integral calculus
-\newcommand{\integral}[3][]{%
-    \def \v{#3}%
-    \ifblank{#1}%
-    {\int{#2}\dif{\v}}% empty
-    {\int_#1{#2}\dif{\v}}% non empty
-}
-
 \newcommand{\partition}[1]{\mathcal{#1}}
 \newcommand{\volume}[1]{\mathit{v}\left(#1\right)}
 \newcommand{\lowersum}[2]{L\left({#1},{#2}\right)}
@@ -36,4 +29,3 @@
 
 \newcommand{\len}{\ell}
 
-\endinput
