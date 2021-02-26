@@ -1,0 +1,18 @@
+\ProvidesPackage{conjuntos}
+
+\RequirePackage{amssymb}
+\RequirePackage{mathrsfs}
+
+\newcommand{\Tau}{\mathscr{T}}
+
+\makeatletter
+\newcommand{\oset}[3][0ex]{%
+  \mathrel{\mathop{#3}\limits^{
+    \vbox to#1{\kern-2\ex@
+    \hbox{$\scriptstyle#2$}\vss}}}}
+\makeatother
+
+\newcommand{\closure}[1]{\overline{#1}}
+\newcommand{\interior}[1]{\mathring{#1}}
+\newcommand{\wideinterior}[1]{\oset{\circ}{\overbrace{#1}}}
+\newcommand{\setder}[1]{\partial{#1}}

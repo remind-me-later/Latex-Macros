@@ -2,6 +2,11 @@
 
 \let\oldepsilon\epsilon
 \renewcommand{\epsilon}{\ensuremath{\varepsilon}}
+\let\oldphi\phi
+\renewcommand{\phi}{\ensuremath{\varphi}}
+
+\let\oldvec\vec
+\AtBeginDocument{\renewcommand{\vec}[1]{\ensuremath{\overline{#1}}}}
 
 \let\originalleft\left
 \let\originalright\right
