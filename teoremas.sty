@@ -8,6 +8,17 @@
 \RequirePackage{amsmath}
 \RequirePackage[thmmarks, amsmath, thref]{ntheorem}
 
+\AtBeginEnvironment{definition}{\vspace{\parskip}}
+\AtBeginEnvironment{theorem}{\vspace{\parskip}}
+\AtBeginEnvironment{proposition}{\vspace{\parskip}}
+\AtBeginEnvironment{corollary}{\vspace{\parskip}}
+\AtBeginEnvironment{lemma}{\vspace{\parskip}}
+\AtBeginEnvironment{remark}{\vspace{\parskip}}
+\AtBeginEnvironment{example}{\vspace{\parskip}}
+\AtBeginEnvironment{problem}{\vspace{\parskip}}
+\AtBeginEnvironment{proof}{\vspace{\parskip}}
+\AtBeginEnvironment{solution}{\vspace{\parskip}}
+
 % Theorems
 \theoremstyle{plain}
 \newtheorem{definition}{Definición}[section]
