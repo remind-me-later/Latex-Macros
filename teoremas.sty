@@ -3,7 +3,7 @@
 % Requirements
 \RequirePackage{amssymb}
 \RequirePackage{etoolbox}
-\RequirePackage[shortlabels]{enumitem}
+\RequirePackage[shortlabels, inline]{enumitem}
 \RequirePackage{multicol}
 \RequirePackage{amsmath}
 \RequirePackage[thmmarks, amsmath, thref]{ntheorem}
@@ -14,6 +14,7 @@
 \AtBeginEnvironment{corollary}{\vspace{\parskip}}
 \AtBeginEnvironment{lemma}{\vspace{\parskip}}
 \AtBeginEnvironment{remark}{\vspace{\parskip}}
+\AtBeginEnvironment{notation}{\vspace{\parskip}}
 \AtBeginEnvironment{example}{\vspace{\parskip}}
 \AtBeginEnvironment{problem}{\vspace{\parskip}}
 \AtBeginEnvironment{proof}{\vspace{\parskip}}
@@ -29,6 +30,7 @@
 
 \theorembodyfont{\normalfont}
 \newtheorem{remark}[theorem]{Nota}
+\newtheorem{notation}[theorem]{Notación}
 \newtheorem{example}{Ejemplo}[section]
 
 % Problems
